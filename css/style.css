@@ -102,7 +102,7 @@ li {
   overflow-x: hidden;
   background-image: url(../assets/images/pattern-rings.svg), url(../assets/images/pattern-rings.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: -100px 133px, right -239px top 970px;
+  background-position: -200px 150px, right -239px top 970px;
   background-color: var(--Black);
 }
 @media screen and (max-width: 1120px) {
@@ -120,14 +120,14 @@ li {
   width: 1110px;
   margin: auto;
   display: flex;
-  gap: 127px;
+  gap: 75px;
   flex-direction: column;
-  background-image: url(../assets/images/pattern-circle.svg), url(../assets/images/image-profile-desktop.webp);
+  background-image: url(../assets/images/pattern-circle.svg), url(../assets/images/image-logo-desktop-7.webp);
   background-repeat: no-repeat, no-repeat;
-  background-position: 600px 500px, 100% 0%;
-  background-size: 129px 129px, 445px 720px;
+  background-position: 600px 500px, 550px 230px;
+  background-size: 0px 0px, 600px 400px;
   padding: 40px 30px;
-  margin-bottom: 104px;
+  margin-bottom: 75px;
 }
 @media screen and (max-width: 1120px) {
   .header {
@@ -153,11 +153,12 @@ li {
   }
 }
 .header__content {
-  width: 706px;
+  width: 906px;
   display: flex;
   gap: 66px;
   flex-direction: column;
   align-items: flex-start;
+  margin: auto;
 }
 @media screen and (max-width: 1120px) {
   .header__content {
@@ -173,6 +174,7 @@ li {
   }
 }
 .header__text {
+  width: 706px;
   display: flex;
   flex-direction: column;
   gap: 37px;
