@@ -1,24 +1,9 @@
 const form = document.getElementById("email-form");
-
-form.addEventListener(
-  "blur",
-  (event) => {
-    const currentInput = event.target;
-    const errorMessage = currentInput.parentNode.nextElementSibling;
-    if (currentInput.validity.valid) {
-      errorMessage.textContent = "";
-    } else {
-      showError(currentInput);
-    }
-  },
-  true
-);
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
 
 form.addEventListener("submit", (event) => {
-  const name = document.getElementById("name");
-  const email = document.getElementById("email");
-  const message = document.getElementById("message");
-
   if (
     !name.validity.valid ||
     !email.validity.valid ||
