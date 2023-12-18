@@ -108,20 +108,19 @@ li {
   display: flex;
   gap: 75px;
   flex-direction: column;
-  background-image: url(../assets/images/pattern-circle.svg),
-    url(../assets/images/image-logo-desktop-7.webp);
-  background-repeat: no-repeat, no-repeat;
-  background-position: 600px 500px, 550px 230px;
-  background-size: 0px 0px, 600px 400px;
+  background-image: url(../assets/images/pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: right 370px bottom 0px;
+  background-size: 129px 129px;
   padding: 40px 30px;
-  margin-bottom: 75px;
+  margin-bottom: 140px;
+  padding-bottom: 0px;
 
   @media screen and (max-width: 1120px) {
     width: 768px;
-    background-image: url(../assets/images/pattern-circle.svg),
-      url(../assets/images/image-profile-tablet.webp);
-    background-position: right -63px top 471px, 100% 20%;
-    background-size: 129px 129px, 322px 600px;
+    background-image: url(../assets/images/pattern-circle.svg);
+    background-position: right 200px bottom -75px;
+    background-size: 129px 129px;
     padding: 30px;
     gap: 90px;
     margin-bottom: 60px;
@@ -129,11 +128,8 @@ li {
 
   @media screen and (max-width: 780px) {
     width: 375px;
-    background-image: url(../assets/images/pattern-circle.svg),
-      url(../assets/images/image-profile-mobile.webp);
-    background-position: right -65px top 254px, 50% 0%;
-    background-size: 129px 129px, 174px 383px;
-    gap: 331px;
+    background-image: none;
+    gap: 50px;
     text-align: center;
     margin-bottom: 80px;
     padding: 20px 20px 0px;
@@ -146,16 +142,23 @@ li {
     flex-direction: column;
     align-items: flex-start;
     margin: auto;
-
+    background-image: url(../assets/images/main-logo.webp);
+    background-repeat: no-repeat;
+    background-size: 450px 450px;
+    background-position: right -60px bottom 0px;
     @media screen and (max-width: 1120px) {
-      width: 443px;
+      width: 100%;
       gap: 34px;
+      background-size: 300px 300px;
     }
 
     @media screen and (max-width: 780px) {
+      height: 520px;
+      justify-content: flex-end;
       align-items: center;
-      width: 100%;
       gap: 24px;
+      background-size: 225px 225px;
+      background-position: left 50% top 0px;
     }
   }
 
@@ -171,6 +174,7 @@ li {
     }
 
     @media screen and (max-width: 780px) {
+      width: 100%;
       gap: 20px;
     }
   }
