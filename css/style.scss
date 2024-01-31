@@ -90,7 +90,7 @@ li {
   background-image: url(../assets/images/pattern-rings.svg),
     url(../assets/images/pattern-rings.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: -200px 150px, right -239px top 970px;
+  background-position: -100px 133px, right -239px top 970px;
   background-color: var(--Black);
 
   @media screen and (max-width: 1120px) {
@@ -106,21 +106,22 @@ li {
   width: 1110px;
   margin: auto;
   display: flex;
-  gap: 75px;
+  gap: 127px;
   flex-direction: column;
-  background-image: url(../assets/images/pattern-circle.svg);
-  background-repeat: no-repeat;
-  background-position: right 370px bottom 0px;
-  background-size: 129px 129px;
+  background-image: url(../assets/images/pattern-circle.svg),
+    url(../assets/images/image-profile-desktop.webp);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 600px 500px, 100% 0%;
+  background-size: 129px 129px, 445px 720px;
   padding: 40px 30px;
-  margin-bottom: 140px;
-  padding-bottom: 0px;
+  margin-bottom: 104px;
 
   @media screen and (max-width: 1120px) {
     width: 768px;
-    background-image: url(../assets/images/pattern-circle.svg);
-    background-position: right 200px bottom -75px;
-    background-size: 129px 129px;
+    background-image: url(../assets/images/pattern-circle.svg),
+      url(../assets/images/image-profile-tablet.webp);
+    background-position: right -63px top 471px, 100% 20%;
+    background-size: 129px 129px, 322px 600px;
     padding: 30px;
     gap: 90px;
     margin-bottom: 60px;
@@ -128,42 +129,36 @@ li {
 
   @media screen and (max-width: 780px) {
     width: 375px;
-    background-image: none;
-    gap: 50px;
+    background-image: url(../assets/images/pattern-circle.svg),
+      url(../assets/images/image-profile-mobile.webp);
+    background-position: right -65px top 254px, 50% 0%;
+    background-size: 129px 129px, 174px 383px;
+    gap: 331px;
     text-align: center;
     margin-bottom: 80px;
     padding: 20px 20px 0px;
   }
 
   &__content {
-    width: 906px;
+    width: 706px;
     display: flex;
     gap: 66px;
     flex-direction: column;
     align-items: flex-start;
-    margin: auto;
-    background-image: url(../assets/images/main-logo.webp);
-    background-repeat: no-repeat;
-    background-size: 450px 450px;
-    background-position: right -60px bottom 0px;
+
     @media screen and (max-width: 1120px) {
-      width: 100%;
+      width: 443px;
       gap: 34px;
-      background-size: 300px 300px;
     }
 
     @media screen and (max-width: 780px) {
-      height: 520px;
-      justify-content: flex-end;
       align-items: center;
+      width: 100%;
       gap: 24px;
-      background-size: 225px 225px;
-      background-position: left 50% top 0px;
     }
   }
 
   &__text {
-    width: 706px;
     display: flex;
     flex-direction: column;
     gap: 37px;
@@ -174,7 +169,6 @@ li {
     }
 
     @media screen and (max-width: 780px) {
-      width: 100%;
       gap: 20px;
     }
   }
