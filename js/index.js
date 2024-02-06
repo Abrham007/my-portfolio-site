@@ -1,18 +1,18 @@
 const form = document.getElementById("email-form");
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const message = document.getElementById("message");
+const senderName = document.getElementById("name");
+const senderEmail = document.getElementById("email");
+const senderMessage = document.getElementById("message");
 
 form.addEventListener("submit", (event) => {
-  if (
-    !name.validity.valid ||
-    !email.validity.valid ||
-    !message.validity.valid
-  ) {
-    showError(name);
-    showError(email);
-    showError(message);
-    event.preventDefault();
+  event.preventDefault();
+  if (!senderName.validity.valid || !senderEmail.validity.valid || !senderMessage.validity.valid) {
+    showError(senderName);
+    showError(senderEmail);
+    showError(senderMessage);
+  } else {
+    sendEmail(senderName.value, senderEmail.value, senderMessage.value);
+    form.reset();
+    return false;
   }
 });
 
@@ -26,4 +26,22 @@ function showError(input) {
     errorMessage.textContent = "Sorry, invalid format here";
     inputBox.classList.add("active");
   }
+}
+
+function sendEmail(name, email, body) {
+  Email.send({
+    SecureToken: "8d0cf874-be82-4868-bc83-08c4853b9f22",
+    To: "abrhamaraya007@gmail.com",
+    From: email,
+    Subject: `Message From Profolio Page Made By ${name}`,
+    Body: body,
+  }).then((message) => {
+    if (message == "OK") {
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully!",
+        icon: "success",
+      });
+    }
+  });
 }
