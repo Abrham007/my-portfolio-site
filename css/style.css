@@ -100,7 +100,8 @@ li {
   color: var(--White);
   font-family: "Space Grotesk";
   overflow-x: hidden;
-  background-image: url(../assets/images/pattern-rings.svg), url(../assets/images/pattern-rings.svg);
+  background-image: url(../assets/images/pattern-rings.svg),
+    url(../assets/images/pattern-rings.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: -100px 133px, right -239px top 970px;
   background-color: var(--Black);
@@ -122,7 +123,8 @@ li {
   display: flex;
   gap: 127px;
   flex-direction: column;
-  background-image: url(../assets/images/pattern-circle.svg), url(../assets/images/image-profile-desktop.png);
+  background-image: url(../assets/images/pattern-circle.svg),
+    url(../assets/images/image-profile-desktop.png);
   background-repeat: no-repeat, no-repeat;
   background-position: 600px 500px, 100% 0%;
   background-size: 129px 129px, 445px 720px;
@@ -132,7 +134,8 @@ li {
 @media screen and (max-width: 1120px) {
   .header {
     width: 768px;
-    background-image: url(../assets/images/pattern-circle.svg), url(../assets/images/image-profile-tablet.png);
+    background-image: url(../assets/images/pattern-circle.svg),
+      url(../assets/images/image-profile-tablet.png);
     background-position: right -63px top 471px, 100% 20%;
     background-size: 129px 129px, 322px 600px;
     padding: 30px;
@@ -143,7 +146,8 @@ li {
 @media screen and (max-width: 780px) {
   .header {
     width: 375px;
-    background-image: url(../assets/images/pattern-circle.svg), url(../assets/images/image-profile-mobile.png);
+    background-image: url(../assets/images/pattern-circle.svg),
+      url(../assets/images/image-profile-mobile.png);
     background-position: right -65px top 254px, 50% 0%;
     background-size: 129px 129px, 174px 383px;
     gap: 331px;
@@ -244,6 +248,7 @@ li {
     margin-bottom: 80px;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 15px;
     border-bottom: 1px solid var(--White);
   }
 }
