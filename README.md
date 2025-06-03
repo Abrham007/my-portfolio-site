@@ -14,8 +14,7 @@
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/Abrham007/singlepage-developer-portfolio.git)
-- Live Site URL: [live site URL](https://abrham007.github.io/singlepage-developer-portfolio/)
+- Live Site URL: [live site URL](www.abrhamaraya.com)
 
 ### Built with
 
@@ -25,4 +24,4 @@
 
 ## Author
 
-- Frontend Mentor - [@Abrham007](https://www.frontendmentor.io/profile/Abrham007)
+- Abrham Araya - [@Abrham007](https://github.com/Abrham007/)
