@@ -5,7 +5,11 @@ const senderMessage = document.getElementById("message");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  if (!senderName.validity.valid || !senderEmail.validity.valid || !senderMessage.validity.valid) {
+  if (
+    !senderName.validity.valid ||
+    !senderEmail.validity.valid ||
+    !senderMessage.validity.valid
+  ) {
     showError(senderName);
     showError(senderEmail);
     showError(senderMessage);
@@ -39,7 +43,7 @@ function sendEmail(name, email, body) {
     if (message == "OK") {
       Swal.fire({
         title: "Success!",
-        text: "Message sent successfully!",
+        text: "Message sent successfully",
         icon: "success",
       });
     }
