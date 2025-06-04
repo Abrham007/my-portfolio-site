@@ -109,7 +109,7 @@ li {
   gap: 127px;
   flex-direction: column;
   background-image: url(../assets/images/pattern-circle.svg),
-    url(../assets/images/image-profile-desktop.webp);
+    url(../assets/images/image-profile-desktop.png);
   background-repeat: no-repeat, no-repeat;
   background-position: 600px 500px, 100% 0%;
   background-size: 129px 129px, 445px 720px;
@@ -119,7 +119,7 @@ li {
   @media screen and (max-width: 1120px) {
     width: 768px;
     background-image: url(../assets/images/pattern-circle.svg),
-      url(../assets/images/image-profile-tablet.webp);
+      url(../assets/images/image-profile-tablet.png);
     background-position: right -63px top 471px, 100% 20%;
     background-size: 129px 129px, 322px 600px;
     padding: 30px;
@@ -130,7 +130,7 @@ li {
   @media screen and (max-width: 780px) {
     width: 375px;
     background-image: url(../assets/images/pattern-circle.svg),
-      url(../assets/images/image-profile-mobile.webp);
+      url(../assets/images/image-profile-mobile.png);
     background-position: right -65px top 254px, 50% 0%;
     background-size: 129px 129px, 174px 383px;
     gap: 331px;
@@ -278,7 +278,7 @@ li {
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 70px 30px;
 
     @media screen and (max-width: 1120px) {
@@ -296,9 +296,29 @@ li {
   &__img {
     width: 540px;
     height: 400px;
+    &__scroll {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 8s ease-in-out;
+    }
 
     @media screen and (max-width: 1120px) {
       width: 345px;
+      height: 253px;
+    }
+  }
+
+  &__img-link {
+    display: block;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    &:hover > img {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 1120px) {
       height: 253px;
     }
   }

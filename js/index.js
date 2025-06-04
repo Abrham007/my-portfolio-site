@@ -49,3 +49,35 @@ function sendEmail(name, email, body) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize the scroll effect for all images
+  initImageScroll();
+
+  function initImageScroll() {
+    const images = document.querySelectorAll(".project__img__scroll");
+
+    images.forEach((img) => {
+      const container = img.parentElement;
+
+      // Wait for image to load
+      img.onload = function () {
+        const scrollDistance = img.height - container.offsetHeight;
+
+        if (scrollDistance > 0) {
+          // Set up hover events
+          container.addEventListener("pointerenter", function () {
+            img.style.transform = `translateY(-${scrollDistance}px)`;
+          });
+
+          container.addEventListener("pointerleave", function () {
+            img.style.transform = "translateY(0)";
+          });
+        }
+      };
+
+      // If image is already loaded (cached)
+      if (img.complete) img.onload();
+    });
+  }
+});
